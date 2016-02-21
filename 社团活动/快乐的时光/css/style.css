@@ -1,0 +1,51 @@
+/* some reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+/*~~[end]~~*/
+
+
+/* css */
+/*body {
+	background: #080F18;
+	padding: 20px 0;
+}*/
+
+.container {
+	width: 800px;
+	margin: 20px auto;	
+	background: #334864;
+	padding: 10px;
+}
+
+.container_inner {
+	position: relative;
+}
+
+.item {
+	position: absolute;
+	background: #fff;
+	border: 10px solid #fff;
+	display: none;
+}
+
+.item img {
+	width: 100%;
+	display: block;
+}
+
+.load,
+.title {
+	text-align: center;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+/*~~[end]~~*/

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>成员风采展</title>
+<link rel="stylesheet" type="text/css" href="css/default.css">
+<link rel='stylesheet prefetch' href='http://libs.useso.com/js/font-awesome/4.2.0/css/font-awesome.min.css'>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<a href="../首页/index.html">回到首页</a><a href="../网页设计2/html/index.html"></a>
+<section class="strips">
+  <article class="strips__strip">
+	<div class="strip__content">
+	  <h1 class="strip__title" data-name="Lorem">卢杰</h1>
+	  	 <div class="strip__inner-text">
+	  	<p>中国矿业大学三等奖学金</p><p>GMC国际企业模拟挑战赛国家级三等奖  
+</p><p>第五届“工商银行杯”银行产品设计大赛国家级优秀奖 
+</p><p>苏北赛区“娃哈哈杯”营销大赛一等奖  
+</p><p>院团委辩论赛一等奖（二辩）  
+</p><p>校书法比赛三等奖  中国矿业大学三等奖学金  
+</p><p>校第四届体育大会拔河比赛团队三等奖  
+</p><p>矿大第一届“创业知识竞赛”一等奖  
+</p><p>“江苏省阳光体育联赛志愿服务”表现优异  
+</p><p>院级“五四红旗团支部”（班长任期内）  
+</p><p>院团委“优秀共青团员”  
+</p><p>“管理领导与艺术文化节”二等奖  
+</p><p>校团委“策划大赛”优秀奖    军训先进个人</p>
+	  	<p><a href="#" target="_blank"></a></p>
+		<p>
+		  <a href="#" target="_blank"><i class="fa fa-qq"></i></a>		</p>
+		</div>
+	</div>
+  </article>
+  <article class="strips__strip">
+	<div class="strip__content">
+	  <h1 class="strip__title" data-name="Ipsum">吴程刚</h1>
+	  <div class="strip__inner-text">
+		<p>2013年军事技能训练中代表管理学院参加定向越野比赛，获得2013年“军事技能训练先进个人”荣誉称号并荣获“体育单项奖学金”，奖金800元，中国矿业大学第四届啦啦操比赛三等奖，“我心中的创业梦”征文比赛二等奖，在第五十四届中国矿业大学大学生田径运动会获男子组4*400米接力比赛第二名，在中国矿业大学管理学院第十五届秋季运动会获男子组100米第七名；男子4*100第七名；在中国矿业大学管理学院第十六届秋季运动会获男子组200米第七名，三级跳第三名</p>
+		<p><a href="#" target="_blank"></a></p>
+		<p>
+		  <a href="#" target="_blank"><i class="fa fa-qq"></i></a>		</p>
+	  </div>
+	</div>
+  </article>
+  <article class="strips__strip">
+	<div class="strip__content">
+	  <h1 class="strip__title" data-name="Dolor">蔡莎莎</h1>
+	  <div class="strip__inner-text">
+		<p>2013-2014年度军训校级优秀个人</p><p>2013-2014年度院级二等奖学金
+</p><p>2013-2014校园广播操比赛第二名
+</p><p>2014-2015年度：汉字繁化简比赛二等奖</p>
+		<p>
+		  <a href="#" target="_blank"><i class="fa fa-weibo"></i></a>		</p>
+	  </div>
+	</div>
+  </article>
+  <article class="strips__strip">
+	<div class="strip__content">
+	  <h1 class="strip__title" data-name="Sit">何少华</h1>
+	  <div class="strip__inner-text">
+		<p>中国矿业大学二等奖学金</p><p>中国矿业大学第四届趣味运动会单脚火车跳第三名
+</p><p>GMC企业模拟运行大赛三等奖
+</p><p>一元微公益活动爱心学子</p>
+		<p>
+		  <a href="#" target="_blank"><i class="fa fa-weixin"></i></a>		</p>
+	  </div>
+	</div>
+  </article>
+  <article class="strips__strip">
+	<div class="strip__content">
+	  <h1 class="strip__title" data-name="Amet">曹雪婷</h1>
+	  <div class="strip__inner-text">
+		<p>宿舍文化节系列一等奖</p><p>创业手抄报大赛优秀奖
+</p><p>哇哈哈杯营销大赛鼓励奖
+</p><p>管理学院社团中心优秀干事
+</p><p>体育大会二十人二十一足女子组第四名
+</p><p>维权知识竞赛二等奖
+</p><p>繁体字大赛二等奖
+</p><p>管理学院优秀共青团员
+</p><p>院级优秀学生</p>
+		<p>
+		  <a href="#" target="_blank"><i class="fa fa-leaf"></i></a>		</p>
+	  </div>
+	</div>
+  </article>
+  <i class="fa fa-close strip__close"></i>
+</section>
+
+<script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script>
+var Expand = function () {
+	var tile = $('.strips__strip');
+	var tileLink = $('.strips__strip > .strip__content');
+	var tileText = tileLink.find('.strip__inner-text');
+	var stripClose = $('.strip__close');
+	var expanded = false;
+	var open = function () {
+		var tile = $(this).parent();
+		if (!expanded) {
+			tile.addClass('strips__strip--expanded');
+			tileText.css('transition', 'all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)');
+			stripClose.addClass('strip__close--show');
+			stripClose.css('transition', 'all .6s 1s cubic-bezier(0.23, 1, 0.32, 1)');
+			expanded = true;
+		}
+	};
+	var close = function () {
+		if (expanded) {
+			tile.removeClass('strips__strip--expanded');
+			tileText.css('transition', 'all 0.15s 0 cubic-bezier(0.23, 1, 0.32, 1)');
+			stripClose.removeClass('strip__close--show');
+			stripClose.css('transition', 'all 0.2s 0s cubic-bezier(0.23, 1, 0.32, 1)');
+			expanded = false;
+		}
+	};
+	var bindActions = function () {
+		tileLink.on('click', open);
+		stripClose.on('click', close);
+	};
+	var init = function () {
+		bindActions();
+	};
+	return { init: init };
+}();
+Expand.init();
+</script>
+</body>
+</html>

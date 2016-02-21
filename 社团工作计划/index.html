@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+
+<title>Full Page Background slider jquery | Webdevtuts</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<script type="text/javascript" src="js/jquery-1.2.6.min.js"></script>
+
+
+<script type="text/javascript">
+
+function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 2000 );
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+<div id="content">
+<h1><a href="../首页/index.html">回到首页</a>社团工作计划及总结</h1>
+<p>  1、迎新招新：虽然这主要是为了塑造社团的形象，但是社团能留给大家非常好的印象，就会增加部员的自豪感，从而让部员更热爱这个社团，投入更多的心血。所以，迎新招新时，要抓住新生对大学的向往，极力宣传咱们的社团。
+</p>
+<p>
+2、例会：每周或每两周的例会，不仅要安排工作，更要加强部员之间的交流，所以，我们需要制定一个灵活且适应情感建设的例会制度，让大家在工作中建立深厚的情感。
+ </p>
+ <p>   3、聚会聚餐：实际上，所有部员聚在一起的时间是很少的，除了例会、社团活动那就只有聚会聚餐的时候了。而只有在这些时刻，才能放下工作，开怀玩耍，因此聚会总是振奋人心。在聚会上可以多玩一些游戏，罚酒令、讲笑话等等。不过要注意，游戏要有趣多样，顾及众人。</p>
+	<p>
+4、生日庆祝：如果有部门中有人过生日，部门全体成员会在生日当天集体发短信或打电话祝福。
+</p>
+<p>5、社团活动：在活动中，大家一起学习、成长，一起努力、付出，愈是深刻的活动，愈能让大家建立深刻的关系，所以，举办或参加社团活动时，要顾及所有部员，同时我们要多争取锻炼他们的机会。
+  </p>
+	<p>
+    6、生活学习:一个温馨有爱的社团，即使是在平时，部员副部也是好朋友，一起学习，互帮互助。比如，部员遇到问题可以找大家解决;相约一起自习、吃饭;我们建一个QQ群，可以在里面聊天、通知信息，分享资料等。
+</p>
+
+
+
+</div><!--end of content-->
+
+<!-- this will work with any number of images -->
+<!-- set the active class on whichever image you want to show up as the default 
+(otherwise this will be the last image) -->
+<div id="slideshow">
+    <img src="images/image1.jpg" alt="Slideshow Image 1" class="active" />
+    <img src="images/image2.jpg" alt="Slideshow Image 2" />
+    <img src="images/image3.jpg" alt="Slideshow Image 3" />
+    <img src="images/image1.jpg" alt="Slideshow Image 4" />
+    <img src="images/image2.jpg" alt="Slideshow Image 5" />
+</div>
+
+
+
+</body>
+</html>

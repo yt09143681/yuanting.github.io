@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title></title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+
+<style type="text/css">
+<!--
+body {
+	background-color: #996699;
+}
+-->
+</style></head>
+
+<body>
+
+<div class="bodyCon07">
+	<a href="../首页/index.html">回到首页</a>
+	<div class="teacher">
+		<div class="teacherPic">
+			<div class="content" id="sirendingzhi1">
+<!--				<img src="images/teacher011.jpg" width="200" height="325" />-->
+				<div class="txt">
+					<h3>公司化运作模式</h3>
+					<h4>本社团采取公司化的运作模式，下设办公室、策划部、市场部和宣传部。在平时的工作中，四个小部门各司其职，独立处理自己的事情。在举办大型活动时，办公室统一调配，统一分工；</h4>
+					<p>市场部负责市场运营与管理；策划部负责活动创意提名。办公室主管日常事务与财务；市场部负责筹措资金与资源；策划部负责活动策划。四个小部门相互联系，共同发展。</p>
+			  </div>
+			</div>
+			<div class="content" id="sirendingzhi2">
+				
+				<div class="txt">
+					<h3>活动项目制</h3>
+					<h4>社团的活动策划统一由策划部负责，从最初的提名到最终形成成熟的活动策划方案，都需要经过策划部的检验与考核。每次活动任务都会分配给具体的小组负责，将责任落实到具体的人</h4>
+					<p>其他部门将起到辅助的作用，听从负责人的调度。这样不仅能节约人力物力，还能尽可能的提高部门运作效率，提高副部与部员活动的积极性。 </p>
+				</div>
+			</div>
+			<div class="content" id="sirendingzhi3">
+
+				<div class="txt">
+					<a href="#" ><h3>独特的例会模式</h3></a>
+					<h4>成功起点的例会别具一格，每次例会都会有专项小组负责，采取自主的例会模式。专项小组可以自定主题，自定形式，自选场地，自己主持。</h4>
+					<p>整个会议应该是采取头脑风暴的方式，激发大家的潜能，锻炼大家的思维。同时，大家在一起彼此学习、交流心得、共同进步！</p>
+				</div>
+			</div>
+			<div class="content" id="sirendingzhi4">
+	
+				<div class="txt">
+					<h3>成员素质拓展培训制</h3>
+					<h4>在团委学生会统一培训的基础上，我社团更进一步对所有成员举行定期的培训，主要从基本办公软件的操作及使用方法、基本商务礼仪知识的学习、演讲练习、大学生创业知识教育等多方面进行。</h4>
+					<p>鉴于本社团的特殊性质，我们需要围绕“创业”开展一些实践类型的活动，比如说，集合部门内部有创业想法的同学做一些摆地摊或者是小买卖的活动。</p>
+				</div>
+			</div>
+			<div class="content" id="sirendingzhi5">
+
+				<div class="txt">
+					<h3>考核制度与情感建设</h3>
+					<h4>本社团在前人的基础上进一步完善了考核制度，加强了对社团成员的管理与约束，包括例会考核和活动考核等</h4>
+					<p>本社团围绕主题“爱与梦想”来建设我们这个大家庭，努力把社团建设成为一个人人都能学到东西的温馨友爱的大家庭！注重成员之间的沟通与交流，定期举行聚会，增强社团内部的凝聚力。</p>
+			  </div>
+			</div>
+		</div>
+		
+		<div style="clear:both;"></div>
+		
+	</div>
+</div>
+
+
+ <!--java开始-->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+	$(".content") .hover(function(){
+			$(this) .children(".txt").stop() .animate({height:"360px"},200);
+            $(this) .parent(".teacherPic") .css({"background":"url(images/"+($(this).attr('id'))+".jpg) no-repeat","-webkit-transition":"all 0.8s ease 0.2s","transition":"all 0.8s ease 0.2s"});
+/*			$(this) .parent(".teacherPic") .css("background","url(images/"+($(this).attr('id'))+".jpg) no-repeat");*/
+			$(this) .find(".txt h3").stop() .animate({paddingTop:"130"},550);
+			$(this) .find(".txt p").stop() .show();
+	},function(){
+			$(this) .children(".txt").stop() .animate({height:"100px"},200);
+			$(this) .find(".txt h3").stop().animate({paddingTop:"0px"},550);
+			$(this) .find(".txt p").stop() .hide();
+		})
+</script>
+<!--java结束-->
+
+
+
+
+</body>
+</html>
